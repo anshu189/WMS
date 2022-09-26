@@ -7,6 +7,7 @@
 *::selection{
     background-color: transparent;
 }
+body{overflow: hidden;}
 
 /* VARIABLES */
 :root{
@@ -28,19 +29,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: var(--yellow-green); */
     background-color: var(--heading-light-lime);
 }
 .logo{
     width: 65px;
     height: 65px;
     border-radius: 100%;
-    margin-right: 10px;
 }
 .header h2{
+    margin: 0 0 0 -49rem;
     letter-spacing: 3px;
     color: var(--primary-white);
-    margin-right: auto;
 }
 .navbar{
     height: 1.3rem;
@@ -60,7 +59,7 @@
     transition: all 0.3s;
 }
 .navbar-link:hover, .navbar-link:active{
-    color: var(--dark-color);
+    color: var(--heading-violet);
 }
 
 /* CLIENT'S PORTAL FORM */
@@ -72,26 +71,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 0 0;
+    margin: 0 0 0 0;
+    min-height: 100vh;
 }
 .formone{
     border: 2px solid var(--electric-blue);
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin: 0 10px 10px 10px;
+    margin: -80px 0 0 50px;
     padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .formtwo1{
+    position: relative;
     border:1px solid var(--electric-blue);
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 400px;
     padding: 20px;
+    top: -105px;
+    margin: 0 75px 0 0;
 }
 .formheading{
     background-color:var(--dark-color);
     color: var(--primary-white);
     text-align: center;
     padding: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 #submitclient{
     font-size: 15px;
@@ -150,7 +156,7 @@
 
 /* PIckup Details */
 
-/* [data-tab-content]{
+[data-tab-content]{
     display: none;
 }
 .active[data-tab-content]{
@@ -177,41 +183,4 @@
 .tab-content{
     margin-left:20px;
     margin-right:20px;
-} */
-[data-tab-content]{
-    display: none;
-}
-
-.active[data-tab-content]{
-    display: block;
-    padding-bottom: 80px;
-}
-.formtwo{
-    /* background-color: var(--primary-white); */
-    padding: 20px;
-}
-.formtwo h1{
-    margin: 0;
-    font-size: larger;
-    padding-bottom: 10px;
-}
-.tabs{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.tab{
-    cursor: pointer;
-    padding: 10px;
-    margin: 0;
-}
-.tab.active{
-    background-color: var(--dark-color);
-  color: white;
-    font-weight: 700;
-}
-.tab-switching{
-    padding: 20px;
-    background-color: var(--primary-white);
 }
