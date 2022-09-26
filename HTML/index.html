@@ -27,24 +27,24 @@
         <form class="formone" action="/HTML/schedule.html">
             <h2 class="formheading">Schedule A Pickup</h2><br><hr><br>
                 <label for="fname">Your name:</label>
-                <input type="text" id="fname" name="cname" value="" placeholder="Name" required><br><br>
+                <input type="text" id="fname" name="cname" placeholder="Name" required><br><br>
                 <label for="fcaddr">Address:</label>
-                <input type="text" id="fcaddr" name="caddr" value="" placeholder="123 ABC"  required><br><br>
+                <input type="text" id="fcaddr" name="caddr" placeholder="123 ABC"  required><br><br>
                 <label for="fzcode">Zip-Code:</label>
-                <input type="number" id="zpcode" name="zcode" value="" placeholder="846234" required><br><br>
+                <input type="number" id="zpcode" name="zcode" placeholder="846234" required><br><br>
                 <label for="fpickupdatetime">Schedule Pickup (Date & Time):</label>
                 <input type="datetime-local" id="fpickupdatetime" name="pickupdatetime" min="2022-09-27T12:00" required><br><br>
                 <label for="fwcateg">Waste Category:</label>
-                <input type="radio" id="rwcateg" name="wcateg" value="Renewable Waste" required>
+                <input type="radio" id="rwcateg" name="wcateg" required>
                 <label for="rwcateg">Renewable Waste</label>
-                <input type="radio" id="nrwcateg" name="wcateg" value="Non-Renewable Waste" required>
+                <input type="radio" id="nrwcateg" name="wcateg"required>
                 <label for="nrwcateg">Non-Renewable Waste</label><br><br>
                 <label for="fwamt">Waste Amount(in KG):</label>
-                <input type="number" id="fwamt" name="wamt" value="" placeholder="10" ><br><br>
+                <input type="number" id="fwamt" name="wamt" placeholder="10" ><br><br>
                 <label for="wsnap">Snap/Picture of Waste (Optional):</label>
                 <input type="file" id="wsnap" name="wpic" accept="image/png, image/jpeg, image/jpg"><br><br>
                 
-                <input id="submitclient" type="submit" value="Submit">
+                <input id="submitclient" type="submit" value="Submit" onclick="hue()">
                 <input id="resetclient" type="reset" value="Reset">
         </form>
         
@@ -57,10 +57,10 @@
                 </ul><hr>
                 <div class="tab-switching"><br>
                     <div id="previous-pickups" data-tab-content>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quaerat corrupti fugiat odit impedit labore corporis non nobis. Placeat tempore dolorem maiores alias reprehenderit ratione accusamus expedita nam repellendus suscipit.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quaerat corporis non nobis. Placeat tempore dolorem maiores alias reprehenderit ratione accusamus expedita nam repellendus suscipit.</p>
                     </div>
                     <div id="present-history" data-tab-content class="active">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dicta, similique quae earum laboriosam numquam consequuntur, magni placeat suscipit dolorum nobis illo odit? Suscipit, ea! Aspernatur architecto asperiores corrupti officiis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dicta, dolorum nobis illo odit? Suscipit, ea! Aspernatur architecto asperiores corrupti officiis.</p>
                     </div>
                 </div>
             </form>
