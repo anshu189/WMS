@@ -35,11 +35,12 @@
     width: 65px;
     height: 65px;
     border-radius: 100%;
+    margin-right: 10px;
 }
 .header h2{
-    margin: 0 0 0 -49rem;
     letter-spacing: 3px;
     color: var(--primary-white);
+    margin-right: auto;
 }
 .navbar{
     height: 1.3rem;
@@ -59,7 +60,7 @@
     transition: all 0.3s;
 }
 .navbar-link:hover, .navbar-link:active{
-    color: var(--heading-violet);
+    color: var(--dark-color);
 }
 
 /* CLIENT'S PORTAL FORM */
@@ -149,7 +150,7 @@
 
 /* PIckup Details */
 
-[data-tab-content]{
+/* [data-tab-content]{
     display: none;
 }
 .active[data-tab-content]{
@@ -176,4 +177,41 @@
 .tab-content{
     margin-left:20px;
     margin-right:20px;
+} */
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+    padding-bottom: 80px;
+}
+.formtwo{
+    /* background-color: var(--primary-white); */
+    padding: 20px;
+}
+.formtwo h1{
+    margin: 0;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+.tabs{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.tab{
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+.tab.active{
+    background-color: var(--dark-color);
+  color: white;
+    font-weight: 700;
+}
+.tab-switching{
+    padding: 20px;
+    background-color: var(--primary-white);
 }
