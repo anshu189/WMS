@@ -77,6 +77,9 @@ tbody:last-child{
     height: 400px;
     padding:10px 20px;
     margin: 50px 0 0 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
 }
 .subform2{
     border: 1px solid var(--dull-blue-green);
@@ -85,7 +88,9 @@ tbody:last-child{
     padding:30px 0;
     margin:50px 0 0 0;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 152, 1211,0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
 }
 #scheduleanother{
     font-size: 18px;

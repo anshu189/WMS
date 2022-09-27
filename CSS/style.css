@@ -7,7 +7,12 @@
 *::selection{
     background-color: transparent;
 }
-body{overflow: hidden;}
+body{overflow: hidden;min-width: 1200px;
+    background-image: url("/Assets/bg.jpg"), linear-gradient(rgba(134, 206, 190, 0.636),rgba(67, 155, 32, 0.334));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
 
 /* VARIABLES */
 :root{
@@ -40,6 +45,8 @@ body{overflow: hidden;}
     margin: 0 0 0 -49rem;
     letter-spacing: 3px;
     color: var(--primary-white);
+    max-width: 165px;
+    position: relative;
 }
 .navbar{
     height: 1.3rem;
@@ -81,6 +88,10 @@ body{overflow: hidden;}
     margin: -80px 0 0 50px;
     padding: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    min-width: 490px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
 }
 .formtwo1{
     position: relative;
@@ -90,6 +101,10 @@ body{overflow: hidden;}
     padding: 20px;
     top: -105px;
     margin: 0 75px 0 0;
+    min-width: 500px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
 }
 .formheading{
     background-color:var(--dark-color);
@@ -103,34 +118,33 @@ body{overflow: hidden;}
     font-size: 15px;
     padding: 10px 30px;
     color: var(--dark-color);
-    background-color: var(--primary-white);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 2px;
+    background: transparent;
     border: 1px solid var(--dark-color);
     transition: background-color 0.3s linear;
 }
 #submitclient:hover{
     color: var(--primary-white);
-    background-color: var(--dark-color);
+    background-color: rgba(47, 38, 51,0.8);
     border: 1px solid var(--primary-white);
-    
 }
 #resetclient{
     font-size: 15px;
     padding: 10px 40px;
     color: var(--dark-color);
-    background-color: var(--primary-white);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 2px;
+    background: transparent;
     border: 1px solid var(--dark-color);
     transition: background-color 0.3s linear;
     margin: 0 0 0 20px;
 }
 #resetclient:hover{
     color: var(--primary-white);
-    background-color: var(--dark-color);
+    background-color: rgba(47, 38, 51,0.8);
     border: 1px solid var(--primary-white);
     
 }
