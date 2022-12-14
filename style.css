@@ -8,7 +8,7 @@
     background-color: transparent;
 }
 body{overflow: hidden;min-width: 1200px;
-    background-image: url("/Assets/bg.jpg"), linear-gradient(rgba(134, 206, 190, 0.636),rgba(67, 155, 32, 0.334));
+    background-image: url("bg.jpg"), linear-gradient(rgba(134, 206, 190, 0.636),rgba(67, 155, 32, 0.334));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
