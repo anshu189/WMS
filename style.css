@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*::selection{
+    background-color: transparent;
+}
+body{overflow: hidden;min-width: 1200px;
+    background-image: url("/Assets/bg.jpg"), linear-gradient(rgba(134, 206, 190, 0.636),rgba(67, 155, 32, 0.334));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+/* VARIABLES */
+:root{
+	--nav-bg-lime:#81D12B;
+	--primary-white:#f7f7f7;
+	--heading-violet:#774977;
+	--heading-light-lime:#69ad32;
+	--dark-color:#2f2633;
+	--dark-charcol:#3D4349;
+	--electric-blue:#516478;
+	--yellow-green:#82C131;
+	--dull-blue-green:#009879;
+}
+
+/* NAVBAR/HEADER */
+.header{
+    padding: 1.5rem 3rem 1.5rem 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--heading-light-lime);
+}
+.logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+.header h2{
+    margin: 0 0 0 -49rem;
+    letter-spacing: 3px;
+    color: var(--primary-white);
+    max-width: 165px;
+    position: relative;
+}
+.navbar{
+    height: 1.3rem;
+}
+.navbar-lst{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.navbar-link:link, .navbar-link:visited{
+    display: inline-block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-white);
+    transition: all 0.3s;
+}
+.navbar-link:hover, .navbar-link:active{
+    color: var(--heading-violet);
+}
+
+/* CLIENT'S PORTAL FORM */
+
+.formcont{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 0;
+    min-height: 100vh;
+}
+.formone{
+    border: 2px solid var(--electric-blue);
+    width: 40%;
+    height: 100%;
+    margin: -80px 0 0 50px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    min-width: 490px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
+}
+.formtwo1{
+    position: relative;
+    border:1px solid var(--electric-blue);
+    width: 40%;
+    height: 400px;
+    padding: 20px;
+    top: -105px;
+    margin: 0 75px 0 0;
+    min-width: 500px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4.4px);
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.24);
+}
+.formheading{
+    background-color:var(--dark-color);
+    color: var(--primary-white);
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+#submitclient{
+    font-size: 15px;
+    padding: 10px 30px;
+    color: var(--dark-color);
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    transition: background-color 0.3s linear;
+}
+#submitclient:hover{
+    color: var(--primary-white);
+    background-color: rgba(47, 38, 51,0.8);
+    border: 1px solid var(--primary-white);
+}
+#resetclient{
+    font-size: 15px;
+    padding: 10px 40px;
+    color: var(--dark-color);
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    transition: background-color 0.3s linear;
+    margin: 0 0 0 20px;
+}
+#resetclient:hover{
+    color: var(--primary-white);
+    background-color: rgba(47, 38, 51,0.8);
+    border: 1px solid var(--primary-white);
+    
+}
+#fname,#fcaddr,#fpickupdatetime,#fwamt,#wsnap,#zpcode{
+    padding: 3px;   
+    outline: none;
+}
+#fcaddr{
+    margin:0 0 0 18px;
+}
+#zpcode{
+    margin: 0 0 0 9px;
+}
+#fpickupdatetime{
+    margin:0 0 0 10px;
+}
+#fwamt{
+    margin:0 0 0 10px;
+}
+#wsnap{
+    margin:0 0 0 10px;
+}
+
+/* PIckup Details */
+
+[data-tab-content]{
+    display: none;
+}
+.active[data-tab-content]{
+    display: block;
+}
+.tabs{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.tab{
+    cursor: pointer;
+    padding: 10px;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.tab.active{
+    color: var(--primary-white);
+    font-weight: 500;
+    background-color: var(--dark-color);
+}
+.tab-content{
+    margin-left:20px;
+    margin-right:20px;
+}
