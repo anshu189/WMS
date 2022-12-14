@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/schedule.css">
+    <title>WMS</title>
+    
+</head>
+<body>
+    <!-- NAVBAR/HEADER -->
+    <header class="header">
+        <a href="index.html"><img src="/Assets/logo.png" alt="Waste Management System" class="logo"></a><h2>De-Bunkers</h2>
+        <nav class="navbar">
+            <ul class="navbar-lst">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="#" class="navbar-link">About</a></li>
+                <li><a href="#" class="navbar-link">Service</a></li>
+                <li><a href="https://instagram.com/anshu.ck" class="navbar-link" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CLIENT'S PORTAL FORM -->
+    <div class="formcont">
+        <div class="tableone">
+            <h2>Waste Category: Renewable</h2><hr>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Truck ID</th>
+                        <th>Date/Time</th>
+                        <th>Distance</th>
+                        <th>Route</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Truck01</td>
+                        <td>22-10-22<br>05:00 pm</td>
+                        <td>10 km</td>
+                        <td>link 1</td>
+                    </tr>
+                    <tr>
+                        <td>Truck03</td>
+                        <td>19-11-22<br>03:45 pm</td>
+                        <td>17.6 km</td>
+                        <td>link 2</td>
+                    </tr>
+                    <tr>
+                        <td>Truck03</td>
+                        <td>19-11-22<br>03:45 pm</td>
+                        <td>17.6 km</td>
+                        <td>link 3</td>
+                    </tr>
+                    <tr>
+                        <td>Truck03</td>
+                        <td>19-11-22<br>03:45 pm</td>
+                        <td>17.6 km</td>
+                        <td>link 4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form class="subform2" action="/HTML/index.html">
+                <input id="scheduleanother" type="submit" value="Schedule Another Pickup">
+            </form>
+        </div>
+
+        <div class="vl"></div>
+        <!-- Pickups Details -->
+        <div class="formtwo2">
+            <form class="subform1"action="#">
+                <ul class="tabs">
+                    <li data-tab-target="#previous-pickups" class="active tab">Past Pickups</li>
+                    <li data-tab-target="#present-history" class="tab">Upcoming Pickups</li>
+                </ul><hr>
+                <div class="tab-switching"><br>
+                    <div id="previous-pickups" data-tab-content>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quaerat corporis non nobis. Placeat tempore dolorem maiores alias reprehenderit ratione accusamus expedita nam repellendus suscipit.</p>
+                    </div>
+                    <div id="present-history" data-tab-content class="active">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dicta, dolorum nobis illo odit? Suscipit, ea! Aspernatur architecto asperiores corrupti officiis.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      <!-- <script>
+        var date = new Date().getDate();
+        var month = new Date().getMonth();
+        var year = new Date().getFullYear();
+        var timehr = new Date().getHours();
+        var timemin = new Date().getMinutes();
+        console.log(timehr,timemin);
+        document.getElementsByName("pickupdatetime").min="timemin";
+    </script> -->
+    <script src="/JS/app.js"></script>
+</body>
+</html>

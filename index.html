@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>WMS</title>
+    
+</head>
+<body>
+    <!-- NAVBAR/HEADER -->
+    <header class="header">
+        <a href="index.html"><img src="/Assets/logo.png" alt="Waste Management System" class="logo"></a><h2>De-Bunkers</h2>
+        <nav class="navbar">
+            <ul class="navbar-lst">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="#" class="navbar-link">About</a></li>
+                <li><a href="#" class="navbar-link">Service</a></li>
+                <li><a href="https://instagram.com/anshu.ck" class="navbar-link" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CLIENT'S PORTAL FORM -->
+    <div class="formcont">
+        <form class="formone" action="schedule.html">
+            <h2 class="formheading">Schedule A Pickup</h2><br><hr><br>
+                <label for="fname">Your name:</label>
+                <input type="text" id="fname" name="cname" placeholder="Name" required><br><br>
+                <label for="fcaddr">Address:</label>
+                <input type="text" id="fcaddr" name="caddr" placeholder="123 ABC"  required><br><br>
+                <label for="fzcode">Zip-Code:</label>
+                <input type="number" id="zpcode" name="zcode" placeholder="846234" required><br><br>
+                <label for="fpickupdatetime">Schedule Pickup (Date & Time):</label>
+                <input type="datetime-local" id="fpickupdatetime" name="pickupdatetime" min="2022-09-27T12:00" required><br><br>
+                <label for="fwcateg">Waste Category:</label>
+                <input type="radio" id="rwcateg" name="wcateg" required>
+                <label for="rwcateg">Renewable Waste</label>
+                <input type="radio" id="nrwcateg" name="wcateg"required>
+                <label for="nrwcateg">Non-Renewable Waste</label><br><br>
+                <label for="fwamt">Waste Amount(in KG):</label>
+                <input type="number" id="fwamt" name="wamt" placeholder="10" ><br><br>
+                <label for="wsnap">Snap/Picture of Waste (Optional):</label>
+                <input type="file" id="wsnap" name="wpic" accept="image/png, image/jpeg, image/jpg"><br><br>
+                
+                <input id="submitclient" type="submit" value="Submit" onclick="hue()">
+                <input id="resetclient" type="reset" value="Reset">
+        </form>
+        
+        <!-- Pickups Details -->
+        <div class="formtwo1">
+            <form action="">
+                <ul class="tabs">
+                    <li data-tab-target="#previous-pickups" class="active tab">Past Pickups</li>
+                    <li data-tab-target="#present-history" class="tab">Upcoming Pickups</li>
+                </ul><hr>
+                <div class="tab-switching"><br>
+                    <div id="previous-pickups" data-tab-content>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quaerat corporis non nobis. Placeat tempore dolorem maiores alias reprehenderit ratione accusamus expedita nam repellendus suscipit.</p>
+                    </div>
+                    <div id="present-history" data-tab-content class="active">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dicta, dolorum nobis illo odit? Suscipit, ea! Aspernatur architecto asperiores corrupti officiis.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      <!-- <script>
+        var date = new Date().getDate();
+        var month = new Date().getMonth();
+        var year = new Date().getFullYear();
+        var timehr = new Date().getHours();
+        var timemin = new Date().getMinutes();
+        console.log(timehr,timemin);
+        document.getElementsByName("pickupdatetime").min="timemin";
+    </script> -->
+    <script src="/JS/app.js"></script>
+</body>
+</html>
